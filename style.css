@@ -1,0 +1,33 @@
+.defs {
+  display: none;
+}
+
+.happy-face {
+  width: 300px;
+  height: 300px;
+}
+
+.face {
+  fill: pink;
+}
+
+.eyeball {
+  fill: white;
+}
+
+.eye {
+  fill: white;
+}
+
+.iris {
+  fill: blue;
+}
+
+.pupil {
+  fill: black;
+}
+
+.smile {
+  stroke: red;
+  stroke-width: 1px;
+}
