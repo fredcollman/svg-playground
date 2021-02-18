@@ -1,6 +1,7 @@
 html {
   --skin-color: pink;
   --eye-color: blue;
+  --flavour: pink;
 }
 
 .defs {
@@ -51,4 +52,33 @@ html {
 
 .brown-eyes {
   --eye-color: #592b04;
+}
+
+.ice-cream {
+  width: 200px;
+  height: 400px;
+}
+
+.cone {
+  fill: #ffdd91;
+}
+
+.scoop {
+  fill: var(--flavour);
+}
+
+.strawberry {
+  --flavour: pink;
+}
+
+.chocolate {
+  --flavour: #330a05;
+}
+
+.vanilla {
+  --flavour: #eed;
+}
+
+.mint {
+  --flavour: #ace6b4;
 }
