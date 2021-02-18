@@ -9,20 +9,28 @@
     <svg class="defs">
       <defs>
       <symbol id="eye" viewBox="0 0 100 100">
-        <circle class="eyeball" cx="50" cy="50" r="50" />
+        <ellipse class="eyeball" cx="50" cy="50" rx="50" ry="30" />
         <circle class="iris" cx="50" cy="50" r="20" />
         <circle class="pupil" cx="50" cy="50" r="8" />
       </symbol>
       <symbol id="happy-face" viewBox="0 0 100 100">
-      <circle class="face" cx="50" cy="50" r="40" />
-      <use xlink:href="#eye" x="32" y="35" width="10" height="10" />
-      <use xlink:href="#eye" x="58" y="35" width="10" height="10" />
-      <path class="smile" d="M 35 65 A 200 200 0 0 0 65 65 A 32 32 0 0 1 35 65" />
+      <ellipse class="face" cx="50" cy="50" rx="40" ry="50"/>
+      <use xlink:href="#eye" x="31" y="33" width="12" height="12" />
+      <use xlink:href="#eye" x="59" y="33" width="12" height="12" />
+      <path class="smile" d="M 35 70 A 200 200 0 0 0 65 70 A 32 32 0 0 1 35 70" />
       </symbol>
       </defs>
     </svg>
 
     <svg class="happy-face">
+      <use xlink:href="#happy-face" />
+    </svg>
+
+    <svg class="happy-face tanned brown-eyes">
+      <use xlink:href="#happy-face" />
+    </svg>
+
+    <svg class="happy-face pale green-eyes">
       <use xlink:href="#happy-face" />
     </svg>
 

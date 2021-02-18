@@ -1,3 +1,8 @@
+html {
+  --skin-color: pink;
+  --eye-color: blue;
+}
+
 .defs {
   display: none;
 }
@@ -8,7 +13,7 @@
 }
 
 .face {
-  fill: pink;
+  fill: var(--skin-color);
 }
 
 .eyeball {
@@ -20,7 +25,7 @@
 }
 
 .iris {
-  fill: blue;
+  fill: var(--eye-color);
 }
 
 .pupil {
@@ -28,6 +33,22 @@
 }
 
 .smile {
-  stroke: red;
+  stroke: #9e0e20;
   stroke-width: 1px;
+}
+
+.tanned {
+  --skin-color: #9c6024;
+}
+
+.pale {
+  --skin-color: #edc1b2;
+}
+
+.green-eyes {
+  --eye-color: #0e8c53;
+}
+
+.brown-eyes {
+  --eye-color: #592b04;
 }
