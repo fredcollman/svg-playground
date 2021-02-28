@@ -30,8 +30,27 @@ const roofPoints = [
 
 const House = () => (
   <svg className="house" viewBox="0 0 100 100">
+    <defs>
+      <pattern id="brick" width="4" height="2"></pattern>
+      <pattern
+        id="pattern-bricks"
+        x="0"
+        y="0"
+        width="4"
+        height="4"
+        patternUnits="userSpaceOnUse"
+      >
+        <rect className="house__brick" x="0" y="0" width="3" height="1" />
+        <rect className="house__brick" x="-2" y="2" width="3" height="1" />
+        <rect className="house__brick" x="2" y="2" width="2" height="1" />
+      </pattern>
+    </defs>
     <polygon className="house__roof" points={roofPoints.join(" ")} />
-    <polygon className="house__frame" points={points.join(" ")} />
+    <polygon
+      className="house__frame"
+      fill="url(#pattern-bricks)"
+      points={points.join(" ")}
+    />
   </svg>
 );
 
