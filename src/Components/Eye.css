@@ -1,0 +1,19 @@
+:root {
+  --eye-color: blue;
+}
+
+.eyeball {
+  fill: white;
+}
+
+.eye {
+  fill: white;
+}
+
+.iris {
+  fill: var(--eye-color);
+}
+
+.pupil {
+  fill: black;
+}
